@@ -4,6 +4,15 @@
 Account::Account()
 {
 	_balance = 200;
+	std::cout << "Account created" << std::endl;
+
+}
+
+Account::Account(Account& old)
+{
+	this->_balance = old._balance;
+	std::cout << "Account created" << std::endl;
+
 }
 
 void Account::payment(int amountOfMoney)
@@ -27,4 +36,9 @@ void Account::withdraw(int amountOfMoney)
 int Account::giveBalance()
 {
 	return _balance;
+}
+
+Account::~Account()
+{
+	std::cout << "Account destroyed" << std::endl;
 }

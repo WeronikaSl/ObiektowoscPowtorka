@@ -15,7 +15,4 @@ public:
 	void setSurname(std::string surname);
 	void setGrades(std::vector<int> grades);
 	double countAverage();
-
-
-
 };
