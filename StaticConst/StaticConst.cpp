@@ -3,7 +3,7 @@
 class Cat
 {
 private:
-    const int _paws = 4;
+    static const int _paws = 4;
     std::string _name = {};
 
 public:
@@ -14,7 +14,7 @@ public:
     {
         this->_name = old._name;
     }
-    std::string getName()
+    std::string getName() const
     {
         return _name;
     }
