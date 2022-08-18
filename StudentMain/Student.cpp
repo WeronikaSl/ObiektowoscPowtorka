@@ -1,22 +1,73 @@
+#include <iostream>
 #include "Student.hpp"
-#include <numeric>
 
-void Student::setName(std::string name)
+
+Promotor::Promotor(Student1* student)
 {
-	_name = name;
+    this->student = student;
 }
 
-void Student::setSurname(std::string surname)
+Promotor::~Promotor()
 {
-	_surname = surname;
+    std::cout << "Promotor umiera" << std::endl;
 }
 
-void Student::setGrades(std::vector<int> grades)
+
+void Promotor::setName(std::string name)
 {
-	_grades = grades;
+    this->name = name;
 }
 
-double Student::countAverage()
+void Promotor::receiveEmail(std::string emailCopy2)
 {
-	return (std::accumulate(_grades.cbegin(), _grades.cend(), 0)/5.0);
+    std::cout << "Promotor odebral maila: " << emailCopy2 << std::endl;
+}
+
+void Promotor::sendEmailToStudent()
+{
+    std::cout << "Promotor wysyla maila" << std::endl;
+    student->receiveEmail("Prosze wyslac prace inzynierska");
+}
+
+Student1::Student1(int yearOfBirth)
+{
+    this->yearOfBirth = yearOfBirth;
+}
+
+std::string Student1::getLanguage(int yearOfBirth)
+{
+    if (yearOfBirth < 1970)
+    {
+        return "rosyjski";
+    }
+    else
+    {
+        return "angielski";
+    }
+}
+
+int Student1::getBirthYear() const
+{
+    return birthYear;
+}
+
+void Student1::setName(std::string name)
+{
+    this->name = name;
+}
+
+void Student1::setPromotor(Promotor* promotor)
+{
+    this->promotor = promotor;
+}
+
+void Student1::sendEmailToPromotor()
+{
+    std::cout << "Student wysyla maila " << std::endl;
+    promotor->receiveEmail("Witam");
+}
+
+void Student1::receiveEmail(std::string emailCopy)
+{
+    std::cout << "Student odebral maila: " << emailCopy << std::endl;
 }
