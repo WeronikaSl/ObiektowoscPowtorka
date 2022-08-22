@@ -4,13 +4,13 @@ class Person;
 
 class Dish
 {
-private:
-	Person* _person;
+//private:
+//	Person* _person;
 protected:
 	unsigned short _kcal = 0;
 public:
 	virtual unsigned short getKcal() const = 0;
-	void setPerson(Person* person);
+	//void setPerson(Person* person);
 	virtual ~Dish();
 };
 
@@ -37,6 +37,8 @@ public:
 	unsigned short getKcal() const override;
 
 };
+
+
 
 class Person
 {

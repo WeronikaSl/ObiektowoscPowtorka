@@ -1,6 +1,7 @@
 #include "Witcher.hpp"
 #include <iostream>
 
+
 Witcher::Witcher(Monster* kikimora) : _Kikimora(kikimora)
 {}
 

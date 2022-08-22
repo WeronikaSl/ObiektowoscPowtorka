@@ -1,9 +1,9 @@
 #include "Food.hpp"
 
-void Dish::setPerson(Person* person)
-{
-    _person = person;
-}
+//void Dish::setPerson(Person* person)
+//{
+//    _person = person;
+//}
 
 Dish::~Dish()
 {

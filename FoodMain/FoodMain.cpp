@@ -5,14 +5,14 @@ int main()
 {
     Dish* polimorficznyWskaznik = nullptr;
     Person person;
-    polimorficznyWskaznik->setPerson(&person);
+    //polimorficznyWskaznik->setPerson(&person);
 
-    std::cout << "Postać waży: " << person.getWeight() << std::endl;
+    std::cout << "Postać waży: " << person.getWeight() << " kg." << std::endl;
 
     unsigned short userInput = 0;
     std::cout
         << "Menu: 1.Spaghetti 2.Pizza 3.Zupa" << std::endl
-        << "Co postać ma zjeść? Wybierz numer:";
+        << "Co postać ma zjeść? Wybierz numer: ";
     std::cin >> userInput;
 
     if (1 == userInput)
@@ -21,11 +21,11 @@ int main()
     }
     else if (2 == userInput)
     {
-        polimorficznyWskaznik == new Pizza(2000);
+        polimorficznyWskaznik = new Pizza(2000);
     }
     else if (3 == userInput)
     {
-        polimorficznyWskaznik == new Soup(500);
+        polimorficznyWskaznik = new Soup(500);
     }
     else
     {
@@ -35,7 +35,7 @@ int main()
     person.setDish(polimorficznyWskaznik);
 
     person.eat(polimorficznyWskaznik);
-    std::cout << "Teraz postać waży: " << person.getWeight() << std::endl;
+    std::cout << "Teraz postać waży: " << person.getWeight() << " kg." << std::endl;
 
     delete polimorficznyWskaznik;
 }
