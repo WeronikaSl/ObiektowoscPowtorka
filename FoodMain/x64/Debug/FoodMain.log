@@ -1,0 +1,4 @@
+﻿  FoodMain.cpp
+C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\FoodMain\FoodMain.cpp(24,31): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\FoodMain\FoodMain.cpp(28,31): warning C4553: '==': result of expression not used; did you intend '='?
+  FoodMain.vcxproj -> C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\x64\Debug\FoodMain.exe
