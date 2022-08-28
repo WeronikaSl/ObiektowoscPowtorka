@@ -1,0 +1,78 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Person::_dish' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Weronika Słowińska/OneDrive/Desktop/CPP/ObiektowoscPowtorka/FoodMain/Food.hpp"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 53,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Person::{ctor}",
+                  "decoratedName": "??0Person@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Person::_dish"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Weronika Słowińska/OneDrive/Desktop/CPP/ObiektowoscPowtorka/FoodMain/Food.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "95844a9ed683748f40a8d29a9bb506c249076b1458523e30eeec49d47f0a308a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/weronika słowińska/onedrive/desktop/cpp/obiektowoscpowtorka/foodmain/foodmain.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "fbec367d8da0f45325f167642d29d298586eac4532932e6e67c23baebf981d04"
+          }
+        }
+      ]
+    }
+  ]
+}

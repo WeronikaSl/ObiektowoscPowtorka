@@ -1,0 +1,2 @@
+C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\x64\Debug\StaticConst.exe.lastcodeanalysissucceeded
+C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\StaticConst\x64\Debug\NativeCodeAnalysis.read.1.tlog

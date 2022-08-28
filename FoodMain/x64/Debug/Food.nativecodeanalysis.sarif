@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/weronika słowińska/onedrive/desktop/cpp/obiektowoscpowtorka/foodmain/food.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "59c5621bec2b9ce284bd3db2c38f774465d771850851378e66126678f82c54b6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/weronika słowińska/onedrive/desktop/cpp/obiektowoscpowtorka/foodmain/food.hpp"
+          },
+          "hashes": {
+            "sha-256": "95844a9ed683748f40a8d29a9bb506c249076b1458523e30eeec49d47f0a308a"
+          }
+        }
+      ]
+    }
+  ]
+}

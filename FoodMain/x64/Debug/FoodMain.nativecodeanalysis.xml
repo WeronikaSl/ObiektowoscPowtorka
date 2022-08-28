@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\FoodMain\</FILEPATH>
+      <FILENAME>Food.hpp</FILENAME>
+      <LINE>53</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Person::_dish' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Person::{ctor}</FUNCTION>
+    <DECORATED>??0Person@@QEAA@XZ</DECORATED>
+    <FUNCLINE>53</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Person::_dish</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -5,13 +5,14 @@
 //    _person = person;
 //}
 
+
 Dish::~Dish()
 {
 }
 
 Spaghetti::Spaghetti(unsigned short kcal)
 {
-    _kcal = kcal;
+
 }
 
 unsigned short Spaghetti::getKcal() const

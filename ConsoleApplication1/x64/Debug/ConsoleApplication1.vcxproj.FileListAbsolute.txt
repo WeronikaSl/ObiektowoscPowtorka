@@ -1,0 +1,2 @@
+C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\x64\Debug\ConsoleApplication1.exe.lastcodeanalysissucceeded
+C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\ConsoleApplication1\x64\Debug\NativeCodeAnalysis.read.1.tlog

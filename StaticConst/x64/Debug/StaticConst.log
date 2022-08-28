@@ -1,2 +1,2 @@
 ﻿  StaticConst.cpp
-C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\StaticConst\StaticConst.cpp(31,9): error C3490: '_x' cannot be modified because it is being accessed through a const object
+  StaticConst.vcxproj -> C:\Users\Weronika Słowińska\OneDrive\Desktop\CPP\ObiektowoscPowtorka\x64\Debug\StaticConst.exe
