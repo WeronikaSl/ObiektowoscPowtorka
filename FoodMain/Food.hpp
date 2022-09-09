@@ -1,16 +1,14 @@
 #pragma once
+#include <memory>
 
 class Person;
 
 class Dish
 {
-//private:
-//	Person* _person;
 protected:
 	unsigned short _kcal = 0;
 public:
 	virtual unsigned short getKcal() const = 0;
-	//void setPerson(Person* person);
 	virtual ~Dish();
 };
 
@@ -42,12 +40,12 @@ public:
 
 class Person
 {
-	Dish* _dish;
+	std::shared_ptr<Dish> _dish;
 	double _weight = 70; // zakładamy, że 1 kg to 7000 kcal
 public:
-	void setDish(Dish* dish);
+	void setDish(std::shared_ptr<Dish> dish);
 	void gainWeight(unsigned short kcal);
-	void eat(Dish* dish);
+	void eat(std::shared_ptr<Dish> dish);
 	double getWeight();
 
 };

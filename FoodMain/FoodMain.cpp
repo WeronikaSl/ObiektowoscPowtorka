@@ -3,9 +3,9 @@
 
 int main()
 {
-    Dish* polimorficznyWskaznik = nullptr;
+    //Dish* polimorficznyWskaznik = nullptr;
+    std::shared_ptr<Dish> polimorficznyWskaznik;
     Person person;
-    //polimorficznyWskaznik->setPerson(&person);
 
     std::cout << "Postać waży: " << person.getWeight() << " kg." << std::endl;
 
@@ -17,15 +17,18 @@ int main()
 
     if (1 == userInput)
     {
-        polimorficznyWskaznik = new Spaghetti(1000);
+        //polimorficznyWskaznik = new Spaghetti(1000);
+        polimorficznyWskaznik = std::make_shared<Spaghetti>(1000);
     }
     else if (2 == userInput)
     {
-        polimorficznyWskaznik = new Pizza(2000);
+        //polimorficznyWskaznik = new Pizza(2000);
+        polimorficznyWskaznik = std::make_shared<Pizza>(2000);
     }
     else if (3 == userInput)
     {
-        polimorficznyWskaznik = new Soup(500);
+        //polimorficznyWskaznik = new Soup(500);
+        polimorficznyWskaznik = std::make_shared<Soup>(500);
     }
     else
     {
@@ -37,5 +40,5 @@ int main()
     person.eat(polimorficznyWskaznik);
     std::cout << "Teraz postać waży: " << person.getWeight() << " kg." << std::endl;
 
-    delete polimorficznyWskaznik;
+    //delete polimorficznyWskaznik;
 }

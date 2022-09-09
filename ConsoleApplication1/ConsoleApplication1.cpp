@@ -6,9 +6,15 @@
 int main()
 {
 
-    int* a = new int(100);
+    int* aaa = new int(100);
+    std::unique_ptr<int> a = std::make_unique<int>(100);
+    std::shared_ptr<int> aa = std::make_shared<int>(100);
 
-    std::cout <<*a;
+    std::cout << aaa << std::endl;
+    std::cout << a << std::endl;
+    std::cout << aa << std::endl;
+
+    delete aaa;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -1,10 +1,5 @@
 #include "Food.hpp"
 
-//void Dish::setPerson(Person* person)
-//{
-//    _person = person;
-//}
-
 
 Dish::~Dish()
 {
@@ -45,12 +40,12 @@ void Person::gainWeight(unsigned short kcal)
     _weight += static_cast<double>(kcal/7000.0);
 }
 
-void Person::setDish(Dish* dish)
+void Person::setDish(std::shared_ptr<Dish> dish)
 {
     _dish = dish;
 }
 
-void Person::eat(Dish* dish)
+void Person::eat(std::shared_ptr<Dish> dish)
 {
     this->gainWeight(dish->getKcal());
 }

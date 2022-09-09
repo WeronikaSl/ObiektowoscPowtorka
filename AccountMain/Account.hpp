@@ -10,5 +10,5 @@ public:
 	void payment(int amountOfMoney);
 	void withdraw(int amountOfMoney);
 	int giveBalance();
-	~Account();
+	virtual ~Account();
 };
