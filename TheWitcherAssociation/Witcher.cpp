@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-Witcher::Witcher(Monster* kikimora) : _Kikimora(kikimora)
+Witcher::Witcher(std::shared_ptr<Monster> kikimora) : _Kikimora(kikimora)
 {}
 
 int Witcher::getAttackPower()
@@ -28,7 +28,7 @@ void Witcher::attack()
 }
 
 
-void Monster::setWitcher(Witcher* geralt)
+void Monster::setWitcher(std::shared_ptr<Witcher> geralt)
 {
     _Geralt = geralt;
 }

@@ -9,7 +9,7 @@ protected:
 	unsigned short _kcal = 0;
 public:
 	virtual unsigned short getKcal() const = 0;
-	virtual ~Dish();
+	virtual ~Dish() = default;
 };
 
 class Spaghetti : public Dish

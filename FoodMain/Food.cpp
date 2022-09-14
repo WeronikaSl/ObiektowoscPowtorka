@@ -1,13 +1,10 @@
 #include "Food.hpp"
 
 
-Dish::~Dish()
-{
-}
 
 Spaghetti::Spaghetti(unsigned short kcal)
 {
-
+    _kcal = kcal;
 }
 
 unsigned short Spaghetti::getKcal() const
@@ -15,7 +12,7 @@ unsigned short Spaghetti::getKcal() const
     return _kcal;
 }
 
-Pizza::Pizza(unsigned short kcal) // : _kcal(kcal) nie działa 
+Pizza::Pizza(unsigned short kcal) 
 {
     _kcal = kcal;
 }

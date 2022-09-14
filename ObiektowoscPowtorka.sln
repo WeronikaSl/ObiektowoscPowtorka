@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Friend", "Friend\Friend.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fraction", "Fraction\Fraction.vcxproj", "{9D3812AB-954B-4B4A-8BEC-425B43D048BE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartPtr", "SmartPtr\SmartPtr.vcxproj", "{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +193,14 @@ Global
 		{9D3812AB-954B-4B4A-8BEC-425B43D048BE}.Release|x64.Build.0 = Release|x64
 		{9D3812AB-954B-4B4A-8BEC-425B43D048BE}.Release|x86.ActiveCfg = Release|Win32
 		{9D3812AB-954B-4B4A-8BEC-425B43D048BE}.Release|x86.Build.0 = Release|Win32
+		{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}.Debug|x64.ActiveCfg = Debug|x64
+		{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}.Debug|x64.Build.0 = Debug|x64
+		{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}.Debug|x86.ActiveCfg = Debug|Win32
+		{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}.Debug|x86.Build.0 = Debug|Win32
+		{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}.Release|x64.ActiveCfg = Release|x64
+		{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}.Release|x64.Build.0 = Release|x64
+		{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}.Release|x86.ActiveCfg = Release|Win32
+		{2EB4753B-F6F8-406D-8E3B-0D807D225E5F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

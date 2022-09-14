@@ -2,7 +2,7 @@
 #include "Student.hpp"
 
 
-Promotor::Promotor(Student1* student)
+Promotor::Promotor(std::shared_ptr<Student1> student)
 {
     this->student = student;
 }
@@ -56,7 +56,7 @@ void Student1::setName(std::string name)
     this->name = name;
 }
 
-void Student1::setPromotor(Promotor* promotor)
+void Student1::setPromotor(std::shared_ptr<Promotor> promotor)
 {
     this->promotor = promotor;
 }

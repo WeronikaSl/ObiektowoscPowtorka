@@ -4,6 +4,7 @@ class Ksztalt
 {
 public:
     virtual void rysuj() = 0;
+    virtual ~Ksztalt() = default;
 };
 
 class Kolo : public Ksztalt
@@ -34,12 +35,9 @@ public:
 
 int main()
 {
-    Kolo k;
-    Kwadrat kw;
-    Ksztalt* wsk = &k;
+    std::shared_ptr<Ksztalt> wsk = std::make_shared<Kolo>();
     wsk->rysuj();
-    wsk = &kw;
+    wsk = std::make_shared<Kwadrat>();
     wsk->rysuj();
 
-    delete wsk;
 }

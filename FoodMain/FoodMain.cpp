@@ -1,9 +1,10 @@
 ﻿#include "Food.hpp"
 #include <iostream>
 
+enum class TypesOfFood {SPAGHETTI = 1, PIZZA, ZUPA};
+
 int main()
 {
-    //Dish* polimorficznyWskaznik = nullptr;
     std::shared_ptr<Dish> polimorficznyWskaznik;
     Person person;
 
@@ -14,31 +15,28 @@ int main()
         << "Menu: 1.Spaghetti 2.Pizza 3.Zupa" << std::endl
         << "Co postać ma zjeść? Wybierz numer: ";
     std::cin >> userInput;
+    TypesOfFood choosenDish = static_cast<TypesOfFood>(userInput);
 
-    if (1 == userInput)
+    switch (choosenDish)
     {
-        //polimorficznyWskaznik = new Spaghetti(1000);
-        polimorficznyWskaznik = std::make_shared<Spaghetti>(1000);
-    }
-    else if (2 == userInput)
-    {
-        //polimorficznyWskaznik = new Pizza(2000);
+    case TypesOfFood::SPAGHETTI:
+        polimorficznyWskaznik = std::make_shared<Spaghetti>(1500);
+        break;
+    case TypesOfFood::PIZZA:
         polimorficznyWskaznik = std::make_shared<Pizza>(2000);
-    }
-    else if (3 == userInput)
-    {
-        //polimorficznyWskaznik = new Soup(500);
+        break;
+    case TypesOfFood::ZUPA:
         polimorficznyWskaznik = std::make_shared<Soup>(500);
-    }
-    else
-    {
+        break;
+    default:
         std::cout << "Nie ma takiej opcji :(" << std::endl;
         return -1;
+        break;
     }
+
     person.setDish(polimorficznyWskaznik);
 
     person.eat(polimorficznyWskaznik);
     std::cout << "Teraz postać waży: " << person.getWeight() << " kg." << std::endl;
 
-    //delete polimorficznyWskaznik;
 }

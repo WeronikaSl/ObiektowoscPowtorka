@@ -4,13 +4,13 @@
 
 int main()
 {
-    Student1 dionizy(1988);
-    std::cout << dionizy.getBirthYear() << std::endl;
-    Promotor promotor(&dionizy);
+    std::shared_ptr<Student1> dionizy = std::make_shared<Student1>(1988);
+    std::shared_ptr<Promotor> promotor = std::make_shared<Promotor>(dionizy);
+    dionizy->setPromotor(promotor);
 
-    dionizy.setPromotor(&promotor);
 
-    dionizy.sendEmailToPromotor();
-    promotor.sendEmailToStudent();
-    std::cout << dionizy.getBirthYear() << std::endl;
+    std::cout << dionizy->getBirthYear() << std::endl;
+    dionizy->sendEmailToPromotor();
+    promotor->sendEmailToStudent();
+    std::cout << dionizy->getBirthYear() << std::endl;
 }
